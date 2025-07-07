@@ -1,0 +1,8 @@
+[mgr]
+show_hidden = true
+ratio = [2,4,3]
+linemode = "none"
+
+[preview]
+max_width = 900
+max_height = 900

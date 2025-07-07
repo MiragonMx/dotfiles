@@ -1,0 +1,188 @@
+{
+    "reload_style_on_change": true,
+    "layer": "top",
+    "position": "top",
+    "spacing": 4,
+    // "height": 35,
+    "modules-left": [
+        "custom/logo",
+        "memory",
+        "disk",
+        "cpu",
+        "temperature",
+        "hyprland/window",
+        // "wlr/taskbar"
+        "hyprland/submap"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "tray",
+        "pulseaudio",
+        "backlight",
+        "battery",
+        "power-profiles-daemon",
+        "keyboard-state",
+        "clock"
+    ],
+
+    "custom/logo": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "wofi --show drun"
+    },
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "all-outputs": false,
+        "format-icons": {
+            "1": "󰖟",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "󰻞",
+            "7": "",
+            "8": "8",
+            "9": "9",
+            "default": "+"
+        }
+    },
+
+    "hyprland/window": {
+        "separate-outputs": true,
+        "max-length": 30,
+        "icon": true,
+        "icon-size": 16
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "󰍛 {}%",
+        "max-length": 10,
+        "on-click-right": "kitty sh -c 'btop'"
+    },
+    "disk": {
+	    "interval": 30,
+	    "format": " {percentage_used}%",
+	    "tooltip-format": " {specific_used:0.1f}/{specific_total:0.1f}GB use used",
+	    "unit": "GB",
+        "on-click-right": "kitty sh -c 'btop'"
+    },
+    "cpu": {
+        "interval": 5,
+        "format": " {icon}",
+        "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
+        "on-click-right": "kitty sh -c 'btop'"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format-critical": "{temperatureC}°C ",
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "on-click-right": "kitty sh -c 'btop'"
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "tooltip-format": "Volume : {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "headphone": "",
+            "default": ["󰖀","󰕾",""]
+        },
+        "on-click": "amixer set Master toggle",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 1
+    },
+    "backlight": {
+	    "format": "{percent}% {icon}",
+	    "format-icons": ["", ""]
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "format-full": "Charged ",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "",
+        "performance": "",
+        "balanced": "",
+        "power-saver": ""
+      }
+    },
+    "keyboard-state": {
+        // "numlock": true,
+        "capslock": true,
+        "format": "󰘶 {icon}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format": "{:%d.%m.%Y %H:%M}"
+        // "format": "  {:%H:%M |   %a, %d.%m.%Y}"
+        // "format-alt": "  {:%a, %d.%m.%Y}",
+    }
+
+    // UNUSED:
+    // "wlr/taskbar": {
+    //     "format": "{icon}",
+    //     "on-click": "activate",
+    //     "on-click-right": "fullscreen",
+    //     "icon-theme": "Fluent",
+    //     "icon-size": 20,
+    //     "tooltip-format": "{title}"
+    // },
+    // "idle_inhibitor": {
+    //     "format": "{icon}",
+    //     "format-icons": {
+    //         "activated": "",
+    //         "deactivated": ""
+    //     }
+    // },
+}

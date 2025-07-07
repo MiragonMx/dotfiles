@@ -1,0 +1,149 @@
+* {
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: 'FiraCode Nerd Font', Material Design Icons, monospace;
+  font-size: 13px;
+}
+
+window#waybar {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  border-bottom: 2px solid rgba(100, 114, 125, 0.5);
+}
+
+window#waybar.hidden {
+  opacity: 0.5;
+}
+
+#workspaces {
+  background-color: transparent;
+  /* border-radius: 3px; */
+}
+
+#workspaces button {
+  all: initial; /* Remove GTK theme values (waybar #1351) */
+  /* min-width: 0; Fix weird spacing in materia (waybar #450) */
+  min-width: 24px;
+  /* margin: 0px 0px; */
+  /* border-radius: 3px; */
+  padding: 0 7px 0 2px;
+  color: #EBDBB2;
+}
+
+#workspaces button.active {
+  color: #EBDBB2;
+  border-bottom: 2px solid #F48220;
+}
+
+#workspaces button:hover {
+ border-bottom: 2px solid #454545;
+}
+
+#workspaces button.urgent {
+  color: #fb4934
+}
+
+#memory,
+#disk,
+#cpu,
+#temperature,
+#custom-power,
+#battery,
+#keyboard-state,
+#backlight,
+#pulseaudio,
+#network,
+#clock,
+#power-profiles-daemon,
+#tray {
+  /* border-radius: 3px; */
+  /* margin: 5px 3px; */
+  padding: 3px 10px;
+  background-color: transparent;
+  color: #EBDBB2;
+}
+#tray {
+  border-bottom: 2px solid #E5AF77;
+}
+
+/* #custom-power { */
+/*   margin-right: 6px; */
+/* } */
+
+#custom-logo {
+  padding: 4px 8px;
+  margin: 0 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: #EBDBB2
+}
+#memory,
+#disk,
+#cpu,
+#temperature {
+  border-bottom: 2px solid #E34E25;
+}
+#battery {
+  border-bottom: 2px solid #675E58;
+}
+@keyframes blink {
+  to {
+    border-bottom: 2px solid #8ec07c;
+    color: #181825;
+  }
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  background-color: #ff0048;
+  color: #181825;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#battery.charging {
+  border-bottom: 2px solid #98971a;
+}
+
+#backlight {
+  border-bottom: 2px solid #675E58;
+}
+
+#keyboard-state {
+  border-bottom: 2px solid #675E58;
+}
+
+#pulseaudio {
+  border-bottom: 2px solid #F48220;
+}
+
+#clock {
+  font-family: Fira Code Nerd Font;
+  border-bottom: 2px solid #675E58;
+}
+
+#power-profiles-daemon.performance {
+  border-bottom: 2px solid #F48220;
+}
+#power-profiles-daemon.balanced {
+  border-bottom: 2px solid #675E58;
+}
+#power-profiles-daemon.power-saver {
+  border-bottom: 2px solid #987A3D;
+}
+
+tooltip {
+border-radius: 8px;
+padding: 15px;
+border-bottom: 2px solid #1d2021;
+}
+
+tooltip label {
+padding: 5px;
+border-bottom: 2px solid #1d2021;
+}
