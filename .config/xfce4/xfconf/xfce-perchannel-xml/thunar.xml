@@ -13,5 +13,5 @@
   <property name="misc-symbolic-icons-in-sidepane" type="bool" value="true"/>
   <property name="last-show-hidden" type="bool" value="true"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_38_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,50,154,50,50,50,50,50,137,50,50,78,50,158"/>
+  <property name="last-details-view-column-widths" type="string" value="50,50,154,50,50,50,50,50,381,50,50,74,50,158"/>
 </channel>
