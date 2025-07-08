@@ -1,0 +1,55 @@
+
+
+
+
+IMAPStore moritz@bouekehome.de-remote
+Host imap.ionos.de
+Port 993
+User moritz@bouekehome.de
+PassCmd "pass moritz@bouekehome.de"
+AuthMechs LOGIN
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore moritz@bouekehome.de-local
+Subfolders Verbatim
+Path /home/moritz-fw13/.local/share/mail/moritz@bouekehome.de/
+Inbox /home/moritz-fw13/.local/share/mail/moritz@bouekehome.de/INBOX
+
+Channel moritz@bouekehome.de
+Expunge Both
+Far :moritz@bouekehome.de-remote:
+Near :moritz@bouekehome.de-local:
+Patterns * !"[Gmail]/All Mail" !"*fts-flatcurve*" !"*virtual*"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+
+
+IMAPStore mobo@tf.uni-kiel.de-remote
+Host mailhost.tf.uni-kiel.de
+Port 993
+User mobo
+PassCmd "pass mobo@tf.uni-kiel.de"
+AuthMechs LOGIN
+TLSType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore mobo@tf.uni-kiel.de-local
+Subfolders Verbatim
+Path /home/moritz-fw13/.local/share/mail/mobo@tf.uni-kiel.de/
+Inbox /home/moritz-fw13/.local/share/mail/mobo@tf.uni-kiel.de/INBOX
+
+Channel mobo@tf.uni-kiel.de
+Expunge Both
+Far :mobo@tf.uni-kiel.de-remote:
+Near :mobo@tf.uni-kiel.de-local:
+Patterns * !"[Gmail]/All Mail" !"*fts-flatcurve*" !"*virtual*"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile

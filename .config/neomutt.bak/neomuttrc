@@ -1,0 +1,14 @@
+# vim: filetype=muttrc
+# see https://gideonwolfe.com/posts/workflow/neomutt/intro/ for details
+
+source ~/.config/neomutt/settings.muttrc
+source ~/.config/neomutt/colors.muttrc
+source ~/.config/neomutt/mappings.muttrc
+
+# Accounts
+
+source ~/.config/neomutt/accounts/ionos
+folder-hook $folder 'source ~/.config/neomutt/accounts/ionos'
+
+source ~/.config/neomutt/accounts/work_tf
+folder-hook $folder 'source ~/.config/neomutt/accounts/work_tf'

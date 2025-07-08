@@ -1,0 +1,19 @@
+# vim: filetype=neomuttrc
+# muttrc file for account moritz@bouekehome.de
+set real_name = "Moritz Boueke"
+set from = "moritz@bouekehome.de"
+set sendmail = "msmtp -a moritz@bouekehome.de"
+alias me Moritz Boueke <moritz@bouekehome.de>
+set folder = "/home/moritz-fw13/.local/share/mail/moritz@bouekehome.de"
+set header_cache = "/home/moritz-fw13/.cache/mutt-wizard/moritz_bouekehome.de/headers"
+set message_cachedir = "/home/moritz-fw13/.cache/mutt-wizard/moritz_bouekehome.de/bodies"
+set mbox_type = Maildir
+set hostname = "bouekehome.de"
+source /usr/local/share/mutt-wizard/switch.muttrc
+set spool_file = "+INBOX"
+set postponed = "+Drafts"
+set trash = "+Trash"
+set record = "+Sent"
+
+macro index o "<shell-escape>mailsync moritz@bouekehome.de<enter>" "sync moritz@bouekehome.de"
+mailboxes "=Archiv/HASPA" "=Archiv/PayPal" "=Archiv/WG Kiel" "=Entw&APw-rfe" "=Gesendete Objekte" "=INBOX" "=Papierkorb" "=Spam"

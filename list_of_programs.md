@@ -41,4 +41,5 @@ use dnf info [package] to see detailes on the packages
 - nwg-look (Gtk appearance modification)
 - fira code nerd font (gnome font utility for installation)
 - mutt-wizard (neomutt setup)
+    + goimapnotify (notifications for mail - go compilation)
 

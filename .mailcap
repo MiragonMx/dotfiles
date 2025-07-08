@@ -1,0 +1,248 @@
+# Save as ~/.mailcap. Then use run-mailcap to:
+#
+# - open files by `run-mailcap --action=view <file>`, or
+# - view them in the terminal by `run-mailcap --action=cat <file>`.
+#
+# Useful
+#
+# - in mutt by `set mailcap_file $HOME/.mailcap`
+# - in Vim by adding to your vimrc
+#
+#      autocmd BufReadPost * if empty(&l:buftype) && !did_filetype() && !&l:binary &&
+#            \   system('file --mime --brief ' . fnamemodify(resolve(expand('%')), ':p:S')) !~# '^text/' |
+#            \     silent exe '%!run-mailcap --action=cat %:S' |
+#            \     setlocal filetype=text readonly buftype=nowrite | endif
+#
+# - in less by LESSOPEN="|run-mailcap --action=cat %s", or
+# - in ranger or lf by making scope.sh run
+#
+#   `run-mailcap --action=cat "$1" | head -n 200`
+#
+# - Since ~/.mailcap is read by firefox (and xdg-open!) when opening a
+#   (downloaded) file, add for each file type foo/bar a sensible line like
+#   `foo/bar; xdg-open %s; test=test -n "$DISPLAY"` for run-mail --action=view
+#
+# Uses lesspipe.sh, bat (or highlight), pandoc, w3m, xdg-open, feh, mpv, ...
+# Since bat is batcat, you can either use `batcat` instead of `bat` in the file,
+# or add `alias bat=batcat` to your shell configuration (~/.profile or ~/.zshenv).
+#
+# From https://github.com/cglindkamp/run-mailcap-rs/blob/master/README.md :
+#
+# Run-mailcap has multiple advantages over Xdg-open: While xdg-open is easier
+# to extend for the application writers and distributions itself (just add an
+# application desktop file with each application), this is not so easy done by
+# the user. A mailcap file on the other hand is simple text file. Just add a
+# new line for the mime type, you want to customize, and your done.
+#
+# In addition, you can have different actions with run-mailcap, e.g. open for
+# viewing or editing or just print the file without looking at it. In
+# principle, you can have the same with desktop files in a desktop environment,
+# but there is just one default, that xdg-open uses. You can add even more
+# flexibility with mailcap files by making entries context dependend ("test"
+# command value in the entry).
+#
+# Last but not least, Mutt already use mailcap files, so if you use one of them
+# and xdg-open, you had to maintain configuration for both programs.
+
+# LibreOffice, Word, Excel et PowerPoint {{{
+# From http://wiki.free-unices.org/doku.php/config/mutt/new_mailcap
+application/vnd.oasis.opendocument.text;                                   $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+# application/vnd.oasis.opendocument.text;                                   $HOME/.config/mutt/bin/mutt_bgrun okular               %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.text;                                   odt2txt %s | cat --squeeze-blank; copiousoutput
+# application/vnd.oasis.opendocument.text;                                   pandoc --from=odt --to=plain %s | cat --squeeze-blank ; copiousoutput
+# application/vnd.oasis.opendocument.text;                                   soffice --cat %s | cat --squeeze-blank ; copiousoutput
+
+application/vnd.oasis.opendocument.spreadsheet;                           $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.spreadsheet;                            odt2txt %s | cat --squeeze-blank; copiousoutput
+# application/vnd.oasis.opendocument.spreadsheet;                            soffice --cat %s | cat --squeeze-blank ; copiousoutput
+
+application/vnd.oasis.opendocument.presentation;                           $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.presentation;                           odt2txt %s | cat --squeeze-blank; copiousoutput
+# application/vnd.oasis.opendocument.presentation;                           soffice --cat %s | cat --squeeze-blank ; copiousoutput
+
+application/vnd.openxmlformats-officedocument.wordprocessingml.document;   $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; nametemplate=%s.docx; test=test -n "$DISPLAY"
+# application/vnd.openxmlformats-officedocument.wordprocessingml.document;   docx2txt.pl %s - | cat --squeeze-blank; nametemplate=%s.docx; copiousoutput
+application/vnd.openxmlformats-officedocument.wordprocessingml.document;   pandoc --from=docx --to=plain %s | cat --squeeze-blank; nametemplate=%s.docx; copiousoutput
+application/vnd.openxmlformats-officedocument.wordprocessingml.template;   $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; nametemplate=%s.docm; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.wordprocessingml.template;   docx2txt.pl %s - | cat --squeeze-blank; nametemplate=%s.docm; copiousoutput
+
+application/msword;                                                        $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/msword;                                                        wvHtml %s - | w3m -dump -T text/html; copiousoutput
+# application/msword;                                                        antiword -- %s | cat --squeeze-blank; copiousoutput
+# application/msword;                                                        catdoc -- %s | cat --squeeze-blank; copiousoutput
+# application/msword;                                                        soffice --cat %s | cat --squeeze-blank ; copiousoutput
+
+application/vnd.msword;                                                    $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/vnd.msword;                                                    wvHtml %s - | w3m -dump -T text/html; copiousoutput
+
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;         $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;         xlsx2csv --all --ignoreempty --delimiter x09 --outputencoding utf-8 %s | cat --squeeze-blank; nametemplate=%s.xlsx; copiousoutput
+# application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;         xlsx2csv xlscat --trim -S all %s | cat --squeeze-blank; nametemplate=%s.xlsx; copiousoutput
+# application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;         excel2csv --file %s; nametemplate=%s.xlsx; copiousoutput
+application/vnd.openxmlformats-officedocument.spreadsheetml.template;      $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+
+application/vnd.ms-excel;                                                  $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/vnd.ms-excel;                                                  xlscat -a utf-8 -b WINDOWS-1252 %s; copiousoutput
+# application/vnd.ms-excel;                                                  xlscat -a %{charset} -b WINDOWS-1252 %s; copiousoutput
+# application/vnd.ms-excel;                                                  excel2csv %s --trim; copiousoutput
+
+application/csv;                                                  $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/csv; trim < %s | column -t -s,; copiousoutput
+
+application/vnd.openxmlformats-officedocument.presentationml.presentation; $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.presentationml.presentation; pptx2md --disable-image --disable-wmf --disable-color --disable-escaping %s --output $HOME/.cache/mutt/presentation.md 2>/dev/null && cat --squeeze-blank $HOME/.cache/mutt/presentation.md; nametemplate=%s.pptx; copiousoutput
+application/vnd.openxmlformats-officedocument.presentationml.template;     $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/vnd.openxmlformats-officedocument.presentationml.slideshow;    $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+
+application/vnd.ms-powerpoint;     $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/vnd.ms-powerpoint;     ppthtml %s | w3m -dump -T text/html; copiousoutput
+
+# }}}
+
+# RTF, EPUB {{{
+application/rtf;                   $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/rtf;                   unrtf --html %s | w3m -dump -T text/html; copiousoutput
+application/richtext;              $HOME/.config/mutt/bin/mutt_bgrun soffice --nologo %s; test=test -n "$DISPLAY"
+application/richtext;              unrtf --html %s | w3m -dump -T text/html; copiousoutput
+
+application/epub+zip;              $HOME/.config/mutt/bin/mutt_bgrun kchmviewer %s; test=test -n "$DISPLAY"
+application/epub+zip;              pandoc --from epub --to plain %s | cat --squeeze-blank; copiousoutput
+# }}}
+
+# PDF, DJVU {{{
+application/pdf;                   $HOME/.config/mutt/bin/mutt_bgrun "${PDFVIEWER:-zathura}" %s; test=test -n "$DISPLAY"; nametemplate=%s.pdf; description="PDF Document"
+application/pdf;                   pdftotext -l 20 -nopgbrk -q -htmlmeta -- %s - | w3m -dump -T text/html; nametemplate=%s.pdf; copiousoutput
+
+application/x-pdf;                 $HOME/.config/mutt/bin/mutt_bgrun "${PDFVIEWER:-zathura}" %s; test=test -n "$DISPLAY"; nametemplate=%s.pdf; description="PDF Document"
+application/x-pdf;                 pdftotext -l 20 -nopgbrk -q -htmlmeta -- %s - | w3m -dump -T text/html; nametemplate=%s.pdf; copiousoutput
+
+application/x-bzpdf;               $HOME/.config/mutt/bin/mutt_bgrun "${PDFVIEWER:-zathura}" %s; test=test -n "$DISPLAY"; nametemplate=%s.pdf.bz2; description="PDF Document"
+application/x-gzpdf;               $HOME/.config/mutt/bin/mutt_bgrun "${PDFVIEWER:-zathura}" %s; test=test -n "$DISPLAY"; nametemplate=%s.pdf.gz; description="PDF Document"
+application/x-xzpdf;               $HOME/.config/mutt/bin/mutt_bgrun "${PDFVIEWER:-zathura}" %s; test=test -n "$DISPLAY"; nametemplate=%s.pdf.xz; description="PDF Document"
+
+image/vnd.djvu;                    $HOME/.config/mutt/bin/mutt_bgrun "${PDFVIEWER:-qpdfview --unique --instance mutt}" %s; test=test -n "$DISPLAY"; nametemplate=%s.pdf.gz; description="DJVU Document"
+image/vnd.djvu;                    djvutxt --page=1-20 %s | cat --squeeze-blank; copiousoutput
+# }}}
+
+# Archives {{{
+application/x-executable;              readelf -WCa %s; copiousoutput
+application/x-pie-executable;          readelf -WCa %s; copiousoutput
+application/x-sharedlib;               readelf -WCa %s; copiousoutput
+
+application/vnd.debian.binary-package; dpkg-deb --contents %s; copiousoutput
+application/x-rpm;                     rpm -qlp %s; copiousoutput
+application/x-xpinstall;               unzip -l %s; copiousoutput
+
+application/x-tar;                     tar tvvf %s; copiousoutput
+application/x-bzip-compressed-tar;     tar jtvvf %s; copiousoutput
+application/x-bzip;                    tar jtvvf %s; copiousoutput
+application/x-bzip2;                   tar jtvvf %s; copiousoutput
+application/x-gtar;                    tar tvfz %s; copiousoutput
+application/x-tar-gz;                  tar tvfz %s; copiousoutput
+application/x-lzip;                    tar --lzip -tvf %s; copiousoutput
+application/x-xz;                      tar tvfJ %s; copiousoutput
+application/x-compress;                tar Ztvf %s; copiousoutput
+application/x-rar-compressed;          unrar v %s; copiousoutput
+
+application/java-archive;              jar tf %s; copiousoutput
+application/zip;                       jar tf %s; nametemplate=%s.jar; copiousoutput
+application/zip;                       unzip -l %s; copiousoutput
+application/x-zip-compressed;          unzip -l %s; copiousoutput
+
+application/x-zstd;                    zstd -lv %s; copiousoutput
+
+application/x-7z-compressed;           7z l %s; copiousoutput
+# }}}
+
+# Multimedia {{{
+image/*;                           $HOME/.config/mutt/bin/mutt_bgrun feh -Tview -- %s; description="Image"; test=test -n "$DISPLAY"
+# image/*;                         $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; test=test -n "$DISPLAY"
+image/*;                           identify -ping %s; copiousoutput
+
+audio/*;                           $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; description="Audio"; test=test -n "$DISPLAY"
+# audio/*;                           $HOME/.config/mutt/bin/mutt_bgrun smplayer 2>/dev/null %s; description="Audio"; test=test -n "$DISPLAY"
+audio/*;                           mpv --aid=no --vid=no --sid=no '%s' || : ; copiousoutput
+# audio/*;                           mediainfo %s; copiousoutput
+
+video/*;                           $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; description="Video"; test=test -n "$DISPLAY"
+# video/*;                           $HOME/.config/mutt/bin/mutt_bgrun smplayer 2>/dev/null %s; description="Audio"; test=test -n "$DISPLAY"
+video/*;                           mpv --aid=no --vid=no --sid=no '%s' || : ; copiousoutput
+# video/*;                           mediainfo %s; copiousoutput
+# }}}
+
+# Text {{{
+text/markdown;                     gvim %s; test=test -n "$DISPLAY"
+text/markdown;                     mdcat %s; copiousoutput
+
+text/html;			    $HOME/.config/mutt/bin/mutt_bgrun "${BROWSER:-firefox}" %s; test=test -n "$DISPLAY"; description="HTML Document"
+# text/html;                          pandoc --from=html --to=markdown %s | mdcat; copiousoutput
+# text/html;                          pandoc --from=html --to=man %s | groff -Tutf8 -man; copiousoutput
+# text/html;                          w3m -I %{charset} -T text/html; charset=%{charset:-UTF-8}; copiousoutput; description="HTML Document"
+text/html;                          w3m -T text/html; copiousoutput; description="HTML Document"
+
+application/json;                  gvim %s; test=test -n "$DISPLAY"
+application/json;                  jq --color-output . %s; copiousoutput
+
+text/x-vcard;                      gvim %s; test=test -n "$DISPLAY"
+text/x-vcard;                      $HOME/.config/mutt/bin/mutt.vcard.filter; copiousoutput
+
+text/calendar;                     gvim %s; test=test -n "$DISPLAY"
+text/x-vcalendar;                  gvim %s; test=test -n "$DISPLAY"
+application/ics;                   gvim %s; test=test -n "$DISPLAY"
+# # Alternatively, you can use `mutt-ics` instead of `vcalendar-filter`:
+# text/calendar;                     mutt-ics; nametemplate=%s.ics; copiousoutput
+text/calendar;                     $HOME/.config/mutt/bin/vcalendar-filter; nametemplate=%s.ics; copiousoutput
+text/x-vcalendar;                  $HOME/.config/mutt/bin/vcalendar-filter; nametemplate=%s.ics; copiousoutput
+application/ics;                   $HOME/.config/mutt/bin/vcalendar-filter; nametemplate=%s.ics; copiousoutput
+
+# # Alternatively, use `highlight --out-format=ansi --force -- %s; copiousoutput`
+# # instead of         `bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput`
+
+application/pgp-signature;         gvim %s; test=test -n "$DISPLAY"
+application/pgp-signature;         bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+
+application/x-tex;                 gvim %s; test=test -n "$DISPLAY"
+application/x-latex;               gvim %s; test=test -n "$DISPLAY"
+application/x-perl;                gvim %s; test=test -n "$DISPLAY"
+application/x-script;              gvim %s; test=test -n "$DISPLAY"
+application/x-shellscript;         gvim %s; test=test -n "$DISPLAY"
+application/x-sh;                  gvim %s; test=test -n "$DISPLAY"
+application/x-diff;                gvim %s; test=test -n "$DISPLAY"
+application/x-patch;               gvim %s; test=test -n "$DISPLAY"
+application/x-tex;                 bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+application/x-latex;               bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+application/x-perl;                bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+application/x-script;              bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+application/x-shellscript;         bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+application/x-sh;                  bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+application/x-diff;                bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+application/x-patch;               bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+
+text/*;                            $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; test=test -n "$DISPLAY"
+# text/*;                            highlight --out-format=ansi --force -- %s; copiousoutput
+text/*;                            bat --paging=never --style=plain --color=always --theme=ansi %s; copiousoutput
+# }}}
+
+# Kitchen-sink {{{
+message/rfc822;                    mu view -- %s | cat --squeeze-blank; copiousoutput
+message/*;                         $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; test=test -n "$DISPLAY"
+message/*;                         LESSQUIET=1 lesspipe.sh %s | cat --squeeze-blank; copiousoutput
+
+multipart/*;                       $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; test=test -n "$DISPLAY"
+multipart/*;                       LESSQUIET=1 lesspipe.sh %s | cat --squeeze-blank; copiousoutput
+
+x-content/*;                       $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; test=test -n "$DISPLAY"
+x-content/*;                       LESSQUIET=1 lesspipe.sh %s | cat --squeeze-blank; copiousoutput
+
+x-epoc/*;                          $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; test=test -n "$DISPLAY"
+x-epoc/*;                          LESSQUIET=1 lesspipe.sh %s | cat --squeeze-blank; copiousoutput
+
+application/octet-stream;          $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; test=test -n "$DISPLAY"
+application/octet-stream;          ccze -AC < %s; nametemplate=%s.log; copiousoutput
+application/octet-stream;          LESSQUIET=1 lesspipe.sh %s | cat --squeeze-blank; copiousoutput
+
+application/*;                     $HOME/.config/mutt/bin/mutt_bgrun xdg-open 2>/dev/null %s; test=test -n "$DISPLAY"
+application/*;                     LESSQUIET=1 lesspipe.sh %s | cat --squeeze-blank; copiousoutput
+# }}}
+
+# ex: set foldmethod=marker:

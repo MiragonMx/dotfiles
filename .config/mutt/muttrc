@@ -1,0 +1,17 @@
+# vim: filetype=neomuttrc
+source /usr/local/share/mutt-wizard/mutt-wizard.muttrc
+set header_cache_backend = "lmdb"
+# source ./colors.muttrc
+
+set sidebar_format = '%D %* %?N?%N/? %?S?%S?'
+color sidebar_highlight green default
+color sidebar_divider default black
+color sidebar_flagged default black
+color sidebar_new green black
+
+set mailcap_file $HOME/.mailcap
+
+
+source /home/moritz-fw13/.config/mutt/accounts/moritz@bouekehome.de.muttrc
+macro index,pager i1 '<sync-mailbox><enter-command>source /home/moritz-fw13/.config/mutt/accounts/moritz@bouekehome.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to moritz@bouekehome.de"
+macro index,pager i2 '<sync-mailbox><enter-command>source /home/moritz-fw13/.config/mutt/accounts/mobo@tf.uni-kiel.de.muttrc<enter><change-folder>!<enter>;<check-stats>' "switch to mobo@tf.uni-kiel.de"

@@ -1,0 +1,4 @@
+# vim: filetype=muttrc
+
+source ./colors-gruvbox-shuber.muttrc
+source ./colors-gruvbox-shuber-extended.muttrc
