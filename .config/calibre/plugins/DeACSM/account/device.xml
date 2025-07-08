@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<adept:deviceInfo xmlns:adept="http://ns.adobe.com/adept">
+  <adept:deviceType>standalone</adept:deviceType>
+  <adept:deviceClass>Desktop</adept:deviceClass>
+  <adept:deviceSerial>a1c5030f8c4dc1ce207d7ab51238ebd8a620a98a</adept:deviceSerial>
+  <adept:deviceName>moritz-Lenovo-Mint</adept:deviceName>
+  <adept:version name="hobbes" value="9.3.58046"/>
+  <adept:version name="clientOS" value="Windows Vista"/>
+  <adept:version name="clientLocale" value="en"/>
+  <adept:fingerprint>ExIB+JPQIiS83BWHKn/T5ZnDfmM=</adept:fingerprint>
+</adept:deviceInfo>

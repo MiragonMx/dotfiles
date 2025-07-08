@@ -1,0 +1,136 @@
+{
+  "configured": true,
+  "delete_acsm_after_fulfill": false,
+  "detailed_logging": false,
+  "list_of_rented_books": [
+    {
+      "book_name": "How to Be Gay. Alles über Coming-out, Sex, Gender und Liebe",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-0044ac49",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-20T23:00:00Z"
+    },
+    {
+      "book_name": "Der Nachtmagier",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-0044aeaf",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-20T23:00:00Z"
+    },
+    {
+      "book_name": "¬Die¬ letzten Tage des Patriarchats",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-0044aeb0",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-20T23:00:00Z"
+    },
+    {
+      "book_name": "Der Weitseher",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-0044aeaf",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-20T23:00:00Z"
+    },
+    {
+      "book_name": "Der Schattenbote",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-0045a6fa",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-23T23:00:00Z"
+    },
+    {
+      "book_name": "Wie wir lieben",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-004612ad",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-25T23:00:00Z"
+    },
+    {
+      "book_name": "Das Lied des Achill",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-00467eb0",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-28T23:00:00Z"
+    },
+    {
+      "book_name": "Babel",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-00474b89",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-31T23:00:00Z"
+    },
+    {
+      "book_name": "Skulduggery Pleasant: Band 7-9 inklusive eShort",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-00474b89",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2024-12-30T23:00:00Z"
+    },
+    {
+      "book_name": "Fourth Wing – Flammengeküsst",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-0049b29b",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2025-01-10T23:00:00Z"
+    },
+    {
+      "book_name": "Die Diplomatin",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-004cc948",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2025-01-22T23:00:00Z"
+    },
+    {
+      "book_name": "Am Ende sterben wir sowieso",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "1d28d77e-1037-4466-ba1c-ef7ec5dece22-004cc949",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2025-01-22T23:00:00Z"
+    },
+    {
+      "book_name": "¬Der¬ Orden des geheimen Baumes - Die Magierin",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "ee40e5c3-cedd-46d5-9cdc-4da39542fc30-000101f4",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2025-05-05T22:00:00Z"
+    },
+    {
+      "book_name": "Ein ganzes Leben",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "ee40e5c3-cedd-46d5-9cdc-4da39542fc30-000101f5",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2025-05-05T22:00:00Z"
+    },
+    {
+      "book_name": "¬Der¬ Orden des geheimen Baumes - Die Königin",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "ee40e5c3-cedd-46d5-9cdc-4da39542fc30-000101f6",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2025-05-05T22:00:00Z"
+    },
+    {
+      "book_name": "¬Der¬ Spurenfinder",
+      "device": "urn:uuid:8a9bccdf-dabb-4010-aaa0-46019cb148a1",
+      "loanID": "028cb155-eb14-4995-9d76-7d74e5bb435f-00000ca6",
+      "operatorURL": "https://acs6.onleihe.de/fulfillment",
+      "user": "urn:uuid:72e7dbed-1939-4b14-b5f0-5f5defd90dd0",
+      "validUntil": "2025-06-06T22:00:00Z"
+    }
+  ],
+  "notify_fulfillment": true
+}

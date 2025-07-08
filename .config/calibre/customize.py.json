@@ -1,0 +1,16 @@
+{
+  "disabled_plugins": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "enabled_plugins": {
+    "__class__": "set",
+    "__value__": []
+  },
+  "filetype_mapping": {},
+  "plugin_customization": {},
+  "plugins": {
+    "DeACSM": "/home/moritz/.config/calibre/plugins/DeACSM.zip",
+    "DeDRM": "/home/moritz-fw13/.config/calibre/plugins/DeDRM.zip"
+  }
+}

@@ -1,13 +1,149 @@
 {
+  "add_comments_to_email": true,
+  "advanced search dialog current tab": 0,
+  "ask_to_manage_device": [
+    "87549CA65B68C7C8273F9E5A146B7719"
+  ],
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAADAAAA9QAAAYYAAAEKAf////8BAAAAAQA="
+  },
   "book_list_pin_splitter_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAEAAAACAAABAP////8A/////wEAAAABAA=="
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+  },
+  "bulk-mde-casing-algorithm": "title_case",
+  "bulk_metadata_window_tab": 0,
+  "card_a_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 96,
+      "collections": 107,
+      "inlibrary": 98,
+      "size": 57,
+      "timestamp": 73,
+      "title": 59
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "card_b_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 96,
+      "collections": 107,
+      "inlibrary": 98,
+      "size": 57,
+      "timestamp": 73,
+      "title": 59
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "choose-merge-dialog-splitter-state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABlgAAAQAA/////wEAAAABAA=="
+  },
+  "color_palette": "dark",
+  "confirm-merge-dialog-splitter-state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABhgAAAQAA/////wEAAAABAA=="
+  },
+  "cover_corner_radius": 3,
+  "cover_grid_background": {
+    "dark": [
+      45,
+      45,
+      45
+    ],
+    "dark_texture": null,
+    "light": [
+      80,
+      80,
+      80
+    ],
+    "light_texture": null,
+    "migrated": true
   },
   "custom_colors_for_color_dialog": [
     [
-      255,
-      255,
-      255,
+      47,
+      47,
+      47,
       255
     ],
     [
@@ -101,30 +237,59 @@
       255
     ]
   ],
-  "geometry-of-calibre_main_window_geometry": {
+  "dark_palette_name": "",
+  "dark_palettes": {
+    "__current__": {
+      "AlternateBase": "#2d2d2d",
+      "Base": "#121212",
+      "BrightText": "#ff0000",
+      "BrightText-disabled": "#ff0000",
+      "Button": "#2d2d2d",
+      "ButtonText": "#dddddd",
+      "ButtonText-disabled": "#7f7f7f",
+      "Highlight": "#0b45c4",
+      "HighlightedText": "#dddddd",
+      "HighlightedText-disabled": "#7f7f7f",
+      "Link": "#6cb4ee",
+      "LinkVisited": "#800080",
+      "PlaceholderText": "#7f7f7f",
+      "PlaceholderText-disabled": "#7f7f7f",
+      "Text": "#dddddd",
+      "Text-disabled": "#7f7f7f",
+      "ToolTipBase": "#2d2d2d",
+      "ToolTipText": "#dddddd",
+      "ToolTipText-disabled": "#dddddd",
+      "Window": "#2d2d2d",
+      "WindowText": "#dddddd",
+      "WindowText-disabled": "#dddddd"
+    }
+  },
+  "default_author_link": null,
+  "general_category_editor_row_height": 30,
+  "geometry-of-Plugin Updater plugin:plugin updater dialog": {
     "frame_geometry": {
-      "height": 444,
-      "width": 698,
+      "height": 480,
+      "width": 968,
       "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
-      "height": 444,
-      "width": 698,
+      "height": 480,
+      "width": 968,
       "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 444,
-      "width": 698,
+      "height": 480,
+      "width": 968,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAArkAAAG7AAAAAAAAAAAAAAK5AAABuwAAAAACAAAABaAAAAAAAAAAAAAAArkAAAG7"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA8cAAAHfAAAAAAAAAAAAAAPHAAAB3wAAAAACAAAABaAAAAAAAAAAAAAAA8cAAAHf"
     },
     "screen": {
       "depth": 32,
@@ -145,16 +310,962 @@
         "width": 1440
       },
       "virtual_geometry": {
+        "height": 2040,
+        "width": 1920,
+        "x": 0,
+        "y": -1080
+      }
+    }
+  },
+  "geometry-of-bulk_metadata_window_geometry": {
+    "frame_geometry": {
+      "height": 1054,
+      "width": 1854,
+      "x": 39,
+      "y": 34
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": 41,
+      "y": 56
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1030,
+      "width": 1850,
+      "x": 41,
+      "y": 56
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAnAAAAIgAAB2QAAAQ/AAAAKQAAADgAAAdiAAAEPQAAAAAAAAAAB4AAAAApAAAAOAAAB2IAAAQ9"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "AU Optronics",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 900,
+      "width": 1408,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 900,
+      "width": 1408,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 504,
+      "width": 938,
+      "x": 0,
+      "y": -1080
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABX8AAAODAAAAAP//+8gAAAOp///9vwAAAAACAAAABaAAAAAAAAAAAAAABX8AAAOD"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 2.0,
+      "geometry_in_logical_pixels": {
         "height": 960,
         "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "BOE",
+      "model": "NE135A1M-NY1",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 960,
+        "width": 1440
+      },
+      "virtual_geometry": {
+        "height": 2040,
+        "width": 1920,
+        "x": 0,
+        "y": -1080
+      }
+    }
+  },
+  "geometry-of-choose-icon-theme-dialog-geometry": {
+    "frame_geometry": {
+      "height": 1029,
+      "width": 904,
+      "x": 504,
+      "y": 42
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1005,
+      "width": 900,
+      "x": 506,
+      "y": 64
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1005,
+      "width": 900,
+      "x": 506,
+      "y": 64
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAH4AAAAKgAABX8AAAQuAAAB+gAAAEAAAAV9AAAELAAAAAAAAAAAB4AAAAH6AAAAQAAABX0AAAQs"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-choose-merge-dialog-geometry": {
+    "frame_geometry": {
+      "height": 333,
+      "width": 688,
+      "x": 617,
+      "y": 396
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 309,
+      "width": 684,
+      "x": 619,
+      "y": 418
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 309,
+      "width": 684,
+      "x": 619,
+      "y": 418
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAJpAAABjAAABRgAAALYAAACawAAAaIAAAUWAAAC1gAAAAAAAAAAB4AAAAJrAAABogAABRYAAALW"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "AU Optronics",
+      "model": "",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-confirm-merge-dialog-geometry": {
+    "frame_geometry": {
+      "height": 322,
+      "width": 704,
+      "x": 2529,
+      "y": 401
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 298,
+      "width": 700,
+      "x": 2531,
+      "y": 423
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 298,
+      "width": 700,
+      "x": 2531,
+      "y": 423
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAnhAAABkQAADKAAAALSAAAJ4wAAAacAAAyeAAAC0AAAAAEAAAAAB4AAAAnjAAABpwAADJ4AAALQ"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-convert_single_dialog_geom": {
+    "frame_geometry": {
+      "height": 1004,
+      "width": 1854,
+      "x": 1954,
+      "y": 60
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 980,
+      "width": 1850,
+      "x": 1956,
+      "y": 82
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 980,
+      "width": 1850,
+      "x": 1956,
+      "y": 82
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAeiAAAAPAAADt8AAAQnAAAHpAAAAFIAAA7dAAAEJQAAAAEAAAAAB4AAAAekAAAAUgAADt0AAAQl"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-create-virtual-library-dialog": {
+    "frame_geometry": {
+      "height": 381,
+      "width": 811,
+      "x": 1034,
+      "y": 372
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 357,
+      "width": 807,
+      "x": 1036,
+      "y": 394
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 357,
+      "width": 807,
+      "x": 1036,
+      "y": 394
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAQKAAABdAAABzQAAALwAAAEDAAAAYoAAAcyAAAC7gAAAAAAAAAAB4AAAAQMAAABigAABzIAAALu"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-customize-palette-geometry": {
+    "frame_geometry": {
+      "height": 579,
+      "width": 830,
+      "x": 540,
+      "y": 266
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 555,
+      "width": 826,
+      "x": 542,
+      "y": 288
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 555,
+      "width": 826,
+      "x": 542,
+      "y": 288
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAIcAAABCgAABVkAAANMAAACHgAAASAAAAVXAAADSgAAAAAAAAAAB4AAAAIeAAABIAAABVcAAANK"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-exim-calibre-geometry": {
+    "frame_geometry": {
+      "height": 600,
+      "width": 800,
+      "x": 294,
+      "y": 110
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 600,
+      "width": 800,
+      "x": 294,
+      "y": 110
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 600,
+      "width": 800,
+      "x": 294,
+      "y": 110
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAEmAAAAbgAABEUAAALFAAABJgAAAG4AAARFAAACxQAAAAACAAAABaAAAAEmAAAAbgAABEUAAALF"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 2.0,
+      "geometry_in_logical_pixels": {
+        "height": 960,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "BOE",
+      "model": "NE135A1M-NY1",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 960,
+        "width": 1440
+      },
+      "virtual_geometry": {
+        "height": 2040,
+        "width": 1920,
+        "x": 0,
+        "y": -1080
+      }
+    }
+  },
+  "geometry-of-manage_authors_dialog_geometry": {
+    "frame_geometry": {
+      "height": 349,
+      "width": 795,
+      "x": 2485,
+      "y": 409
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 325,
+      "width": 791,
+      "x": 2487,
+      "y": 431
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 325,
+      "width": 791,
+      "x": 2487,
+      "y": 431
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAm1AAABmQAADM8AAAL1AAAJtwAAAa8AAAzNAAAC8wAAAAEAAAAAB4AAAAm3AAABrwAADM0AAALz"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-metadata_single_gui_geom": {
+    "frame_geometry": {
+      "height": 600,
+      "width": 850,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 600,
+      "width": 850,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 600,
+      "width": 850,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA1EAAAJXAAAAAAAAAAAAAANRAAACVwAAAAACAAAABaAAAAAAAAAAAAAAA1EAAAJX"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 2.0,
+      "geometry_in_logical_pixels": {
+        "height": 960,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "BOE",
+      "model": "NE135A1M-NY1",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 960,
+        "width": 1440
+      },
+      "virtual_geometry": {
+        "height": 2040,
+        "width": 1920,
+        "x": 0,
+        "y": -1080
+      }
+    }
+  },
+  "geometry-of-metasingle_window_geometry3": {
+    "frame_geometry": {
+      "height": 936,
+      "width": 1436,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 936,
+      "width": 1436,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 936,
+      "width": 1436,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABZsAAAOnAAAAAAAAAAAAAAWbAAADpwAAAAACAAAABaAAAAAAAAAAAAAABZsAAAOn"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 2.0,
+      "geometry_in_logical_pixels": {
+        "height": 960,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "BOE",
+      "model": "NE135A1M-NY1",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 960,
+        "width": 1440
+      },
+      "virtual_geometry": {
+        "height": 2040,
+        "width": 1920,
+        "x": 0,
+        "y": -1080
+      }
+    }
+  },
+  "geometry-of-plugin config dialog:File type:DeACSM": {
+    "frame_geometry": {
+      "height": 445,
+      "width": 374,
+      "x": 2699,
+      "y": 373
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 421,
+      "width": 370,
+      "x": 2701,
+      "y": 395
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 421,
+      "width": 370,
+      "x": 2701,
+      "y": 395
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAqLAAABdQAADAAAAAMxAAAKjQAAAYsAAAv+AAADLwAAAAEAAAAAB4AAAAqNAAABiwAAC/4AAAMv"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-plugin config dialog:File type:DeDRM": {
+    "frame_geometry": {
+      "height": 508,
+      "width": 286,
+      "x": 2739,
+      "y": 298
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 484,
+      "width": 282,
+      "x": 2741,
+      "y": 320
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 484,
+      "width": 282,
+      "x": 2741,
+      "y": 320
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAqzAAABKgAAC9AAAAMlAAAKtQAAAUAAAAvOAAADIwAAAAEAAAAAB4AAAAq1AAABQAAAC84AAAMj"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-preferences dialog geometry": {
+    "frame_geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 720,
+      "width": 930,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA6EAAALPAAAAAAAAAAAAAAOhAAACzwAAAAACAAAABaAAAAAAAAAAAAAAA6EAAALP"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 2.0,
+      "geometry_in_logical_pixels": {
+        "height": 960,
+        "width": 1440,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "BOE",
+      "model": "NE135A1M-NY1",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 960,
+        "width": 1440
+      },
+      "virtual_geometry": {
+        "height": 2040,
+        "width": 1920,
+        "x": 0,
+        "y": -1080
+      }
+    }
+  },
+  "geometry-of-quickview_dialog_geometry": {
+    "frame_geometry": {
+      "height": 1047,
+      "width": 953,
+      "x": 2882,
+      "y": 28
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1045,
+      "width": 951,
+      "x": 2883,
+      "y": 29
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1045,
+      "width": 951,
+      "x": 2883,
+      "y": 29
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAtCAAAAHAAADvoAAAQyAAALQwAAAB0AAA75AAAEMQAAAAEAAAAAB4AAAAtDAAAAHQAADvkAAAQx"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-single-cover-fetch-dialog-geometry": {
+    "frame_geometry": {
+      "height": 307,
+      "width": 300,
+      "x": 2732,
+      "y": 468
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 283,
+      "width": 296,
+      "x": 2734,
+      "y": 490
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 283,
+      "width": 296,
+      "x": 2734,
+      "y": 490
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAqsAAAB1AAAC9cAAAMGAAAKrgAAAeoAAAvVAAADBAAAAAEAAAAAB4AAAAquAAAB6gAAC9UAAAME"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-tag_list_editor_dialog_geometry": {
+    "frame_geometry": {
+      "height": 534,
+      "width": 937,
+      "x": 2413,
+      "y": 295
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 510,
+      "width": 933,
+      "x": 2415,
+      "y": 317
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 510,
+      "width": 933,
+      "x": 2415,
+      "y": 317
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAltAAABJwAADRUAAAM8AAAJbwAAAT0AAA0TAAADOgAAAAEAAAAAB4AAAAlvAAABPQAADRMAAAM6"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 1,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 3840,
         "x": 0,
         "y": 0
       }
     }
   },
   "grid view visible": false,
+  "last_used_language": "de",
   "library_usage_stats": {
-    "/home/moritz-fw13/Calibre Library": 2
+    "/home/moritz-fw13/documents/books_cali": 58
+  },
+  "light_palette_name": "",
+  "light_palettes": {
+    "__current__": {
+      "AlternateBase": "#f5f5f5",
+      "Base": "#ffffff",
+      "BrightText": "#ff0000",
+      "BrightText-disabled": "#ff0000",
+      "Button": "#f0f0f0",
+      "ButtonText": "#000000",
+      "ButtonText-disabled": "#787878",
+      "Highlight": "#308cc6",
+      "HighlightedText": "#ffffff",
+      "HighlightedText-disabled": "#787878",
+      "Link": "#0000ff",
+      "LinkVisited": "#ff00ff",
+      "PlaceholderText": "#787878",
+      "PlaceholderText-disabled": "#787878",
+      "Text": "#000000",
+      "Text-disabled": "#787878",
+      "ToolTipBase": "#ffffdc",
+      "ToolTipText": "#000000",
+      "ToolTipText-disabled": "#000000",
+      "Window": "#f0f0f0",
+      "WindowText": "#000000",
+      "WindowText-disabled": "#000000"
+    }
   },
   "main_window_central_widget_state": {
     "layout": "wide",
@@ -172,10 +1283,10 @@
       "tag_browser": true
     },
     "wide_desires": {
-      "book_details_width": 0.2996742671009772,
+      "book_details_width": 0.17045454545454544,
       "cover_browser_height": 0.2858517805582291,
       "quick_view_height": 0.2377285851780558,
-      "tag_browser_width": 0.2996742671009772
+      "tag_browser_width": 0.15056818181818182
     },
     "wide_visibility": {
       "book_details": true,
@@ -185,8 +1296,101 @@
       "tag_browser": true
     }
   },
+  "manage_authors_table_widths": [
+    148,
+    148,
+    148,
+    148,
+    148
+  ],
+  "memory_view books view state": {
+    "column_alignment": {
+      "size": "center",
+      "timestamp": "center"
+    },
+    "column_positions": {
+      "authors": 2,
+      "collections": 5,
+      "inlibrary": 0,
+      "size": 4,
+      "timestamp": 3,
+      "title": 1
+    },
+    "column_sizes": {
+      "authors": 239,
+      "collections": 107,
+      "inlibrary": 98,
+      "size": 65,
+      "timestamp": 102,
+      "title": 350
+    },
+    "formats_injected": true,
+    "hidden_columns": [],
+    "id_injected": true,
+    "languages_injected": true,
+    "last_modified_injected": true,
+    "path_injected": true,
+    "sort_history": [
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ],
+      [
+        "inlibrary",
+        false
+      ],
+      [
+        "timestamp",
+        false
+      ]
+    ]
+  },
+  "metadata-download-identify-widget-splitter-state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAACAAAAAQAA/////wEAAAABAA=="
+  },
+  "previous_sort_order_BooksView": {
+    "ondevice": true,
+    "series": false,
+    "tags": true,
+    "timestamp": false,
+    "title": true
+  },
   "quick_start_guide_added": true,
+  "quickview_dialog_books_table_widths": [
+    274,
+    274,
+    274
+  ],
   "qv_open_at_shutdown": false,
+  "recently_used_languages": [
+    "English",
+    "German",
+    "German, Swiss"
+  ],
   "search bar visible": true,
-  "tag browser search box visible": false
+  "show_emblems": false,
+  "tag browser search box visible": false,
+  "tag_list_editor_table_widths": [
+    257,
+    146,
+    86,
+    51,
+    28
+  ],
+  "tb_search_order": {
+    "0": 1,
+    "1": 2,
+    "2": 3,
+    "3": 4,
+    "4": 0
+  }
 }

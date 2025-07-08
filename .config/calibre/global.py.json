@@ -2,7 +2,7 @@
   "add_formats_to_existing": false,
   "case_sensitive": false,
   "check_for_dupes_on_ctl": false,
-  "database_path": "/home/moritz-fw13/library1.db",
+  "database_path": "/home/moritz/library1.db",
   "filename_pattern": "(?P<title>.+) - (?P<author>[^_]+)",
   "input_format_order": [
     "EPUB",
@@ -23,10 +23,10 @@
     "PDF",
     "TXT"
   ],
-  "installation_uuid": "9269e3a0-a003-4e44-85a5-a6fe3a16ac7e",
+  "installation_uuid": "938e6fd9-4a4b-4795-ab3b-31ab231a38fb",
   "isbndb_com_key": "",
   "language": "en",
-  "library_path": "/home/moritz-fw13/Calibre Library",
+  "library_path": "/home/moritz-fw13/documents/books_cali",
   "limit_search_columns": false,
   "limit_search_columns_to": [
     "title",
@@ -41,7 +41,7 @@
   "network_timeout": 5,
   "new_book_tags": [],
   "numeric_collation": false,
-  "output_format": "EPUB",
+  "output_format": "epub",
   "read_file_metadata": true,
   "saved_searches": {},
   "swap_author_names": false,

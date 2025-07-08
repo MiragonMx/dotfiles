@@ -1,0 +1,260 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 1047,
+      "width": 953,
+      "x": 962,
+      "y": 28
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1045,
+      "width": 951,
+      "x": 963,
+      "y": 29
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1045,
+      "width": 951,
+      "x": 963,
+      "y": 29
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAPCAAAAHAAAB3oAAAQyAAADwwAAAB0AAAd5AAAEMQAAAAAAAAAAB4AAAAPDAAAAHQAAB3kAAAQx"
+    },
+    "screen": {
+      "depth": 24,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "LG Electronics",
+      "model": "LG IPS FULLHD",
+      "name": "HDMI-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAIUA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAkwD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAAB6AP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAOUA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAEQD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAM4A////AAADtwAABBUAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "book_scrollbar": false,
+    "controls_help_shown_count": 2,
+    "standalone_font_settings": {},
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Shusterman, Neal"
+        ],
+        "key": "/home/moritz/documents/book_library/Neal Shusterman/Scythe (41)/Scythe - Neal Shusterman.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Neal Shusterman/Scythe (41)/Scythe - Neal Shusterman.epub",
+        "timestamp": "2025-05-03T20:05:08.896Z",
+        "title": "Scythe – Die Hüter des Todes: Die Hüter des Todes"
+      },
+      {
+        "authors": [
+          "Shannon, Samantha"
+        ],
+        "key": "/home/moritz/documents/book_library/Samantha Shannon/Der Orden des geheimen Baumes - Die Magierin (44)/Der Orden des geheimen Baumes - Die Magier - Samantha Shannon.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Samantha Shannon/Der Orden des geheimen Baumes - Die Magierin (44)/Der Orden des geheimen Baumes - Die Magier - Samantha Shannon.epub",
+        "timestamp": "2025-05-03T20:04:45.984Z",
+        "title": "¬Der¬ Orden des geheimen Baumes - Die Magierin"
+      },
+      {
+        "authors": [
+          "Shannon, Samantha"
+        ],
+        "key": "/home/moritz/documents/book_library/Shannon, Samantha/!Der! Orden des geheimen Baumes - Die Konigin (46)/!Der! Orden des geheimen Baumes - Die Koni - Shannon, Samantha.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Shannon, Samantha/!Der! Orden des geheimen Baumes - Die Konigin (46)/!Der! Orden des geheimen Baumes - Die Koni - Shannon, Samantha.epub",
+        "timestamp": "2025-05-03T20:00:50.560Z",
+        "title": "¬Der¬ Orden des geheimen Baumes - Die Königin"
+      },
+      {
+        "authors": [
+          "Silvera, Adam"
+        ],
+        "key": "/home/moritz/documents/book_library/Silvera, Adam/Am Ende sterben wir sowieso (42)/Am Ende sterben wir sowieso - Silvera, Adam.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Silvera, Adam/Am Ende sterben wir sowieso (42)/Am Ende sterben wir sowieso - Silvera, Adam.epub",
+        "timestamp": "2025-01-20T19:23:27.374Z",
+        "title": "Am Ende sterben wir sowieso"
+      },
+      {
+        "authors": [
+          "Stokowski, Margarete"
+        ],
+        "key": "/home/moritz/documents/book_library/Margarete Stokowski/Die letzten Tage des Patriarchats (34)/Die letzten Tage des Patriarchats - Margarete Stokowski.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Margarete Stokowski/Die letzten Tage des Patriarchats (34)/Die letzten Tage des Patriarchats - Margarete Stokowski.epub",
+        "timestamp": "2025-01-05T09:52:13.291Z",
+        "title": "¬Die¬ letzten Tage des Patriarchats"
+      },
+      {
+        "authors": [
+          "Lindholm, Megan"
+        ],
+        "key": "/home/moritz/documents/book_library/Robin Hobb/Der Nachtmagier (32)/Der Nachtmagier - Robin Hobb.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Robin Hobb/Der Nachtmagier (32)/Der Nachtmagier - Robin Hobb.epub",
+        "timestamp": "2025-01-05T09:46:54.205Z",
+        "title": "Der Nachtmagier"
+      },
+      {
+        "authors": [
+          "Lindholm, Megan"
+        ],
+        "key": "/home/moritz/documents/book_library/Robin Hobb/Der Weitseher (33)/Der Weitseher - Robin Hobb.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Robin Hobb/Der Weitseher (33)/Der Weitseher - Robin Hobb.epub",
+        "timestamp": "2025-01-05T09:46:19.723Z",
+        "title": "Der Weitseher"
+      },
+      {
+        "authors": [
+          "Landy, Derek"
+        ],
+        "key": "/home/moritz/documents/book_library/Landy, Derek/Skulduggery Pleasant_ Band 7-9 inklusive eShort (38)/Skulduggery Pleasant_ Band 7-9 inklusive e - Landy, Derek.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Landy, Derek/Skulduggery Pleasant_ Band 7-9 inklusive eShort (38)/Skulduggery Pleasant_ Band 7-9 inklusive e - Landy, Derek.epub",
+        "timestamp": "2024-12-29T12:26:50.301Z",
+        "title": "Skulduggery Pleasant: Band 7-9 inklusive eShort"
+      },
+      {
+        "authors": [
+          "Karig, Friedemann"
+        ],
+        "key": "/home/moritz/documents/book_library/Karig, Friedemann/Wie wir lieben (36)/Wie wir lieben - Karig, Friedemann.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Karig, Friedemann/Wie wir lieben (36)/Wie wir lieben - Karig, Friedemann.epub",
+        "timestamp": "2024-12-24T07:25:04.007Z",
+        "title": "Wie wir lieben"
+      },
+      {
+        "authors": [
+          "Lindholm, Megan"
+        ],
+        "key": "/home/moritz/documents/book_library/Lindholm, Megan/Der Schattenbote (35)/Der Schattenbote - Lindholm, Megan.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Lindholm, Megan/Der Schattenbote (35)/Der Schattenbote - Lindholm, Megan.epub",
+        "timestamp": "2024-12-22T13:38:12.644Z",
+        "title": "Der Schattenbote"
+      },
+      {
+        "authors": [
+          "Dawson, Juno"
+        ],
+        "key": "/home/moritz/documents/book_library/Juno Dawson/How to Be Gay. Alles uber Coming-out, Sex, Gender und Liebe (31)/How to Be Gay. Alles uber Coming-out, Sex, - Juno Dawson.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Juno Dawson/How to Be Gay. Alles uber Coming-out, Sex, Gender und Liebe (31)/How to Be Gay. Alles uber Coming-out, Sex, - Juno Dawson.epub",
+        "timestamp": "2024-12-18T22:06:28.317Z",
+        "title": "How to Be Gay. Alles über Coming-out, Sex, Gender und Liebe"
+      },
+      {
+        "authors": [
+          "Lindholm, Megan"
+        ],
+        "key": "/home/moritz/documents/book_library/Lindholm, Megan/Der Weitseher (33)/Der Weitseher - Lindholm, Megan.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Lindholm, Megan/Der Weitseher (33)/Der Weitseher - Lindholm, Megan.epub",
+        "timestamp": "2024-12-18T22:05:38.606Z",
+        "title": "Der Weitseher"
+      },
+      {
+        "authors": [
+          "Oseman, Alice"
+        ],
+        "key": "/home/moritz/documents/book_library/Oseman, Alice/Solitaire (deutsche Ausgabe) (22)/Solitaire (deutsche Ausgabe) - Oseman, Alice.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Oseman, Alice/Solitaire (deutsche Ausgabe) (22)/Solitaire (deutsche Ausgabe) - Oseman, Alice.epub",
+        "timestamp": "2024-12-04T21:41:35.193Z",
+        "title": "Solitaire (deutsche Ausgabe)"
+      },
+      {
+        "authors": [
+          "Alice Oseman"
+        ],
+        "key": "/home/moritz/documents/book_library/Alice Oseman/Solitaire (21)/Solitaire - Alice Oseman.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Alice Oseman/Solitaire (21)/Solitaire - Alice Oseman.epub",
+        "timestamp": "2024-12-04T21:14:16.935Z",
+        "title": "Solitaire"
+      },
+      {
+        "authors": [
+          "Charlotte Bronte"
+        ],
+        "key": "/home/moritz/documents/book_library/Charlotte Bronte/Jane Eyre_ Roman (10)/Jane Eyre_ Roman - Charlotte Bronte.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Charlotte Bronte/Jane Eyre_ Roman (10)/Jane Eyre_ Roman - Charlotte Bronte.epub",
+        "timestamp": "2024-12-04T19:20:49.148Z",
+        "title": "Jane Eyre"
+      },
+      {
+        "authors": [
+          "George Orwell"
+        ],
+        "key": "/home/moritz/documents/book_library/George Orwell/1984_ Roman (4)/1984_ Roman - George Orwell.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/George Orwell/1984_ Roman (4)/1984_ Roman - George Orwell.epub",
+        "timestamp": "2024-12-04T19:20:20.417Z",
+        "title": "1984"
+      },
+      {
+        "authors": [
+          "Shahid Riaz"
+        ],
+        "key": "/home/moritz/documents/book_library/J. R. R. Tolkien/The Two Towers (The Lord of the Rings, Book 2) (7)/The Two Towers (The Lord of the Rings, Boo - J. R. R. Tolkien.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/J. R. R. Tolkien/The Two Towers (The Lord of the Rings, Book 2) (7)/The Two Towers (The Lord of the Rings, Boo - J. R. R. Tolkien.epub",
+        "timestamp": "2024-12-04T19:18:02.117Z",
+        "title": "The Two Towers (The Lord of the Rings, Boo"
+      },
+      {
+        "authors": [
+          "Shahid Riaz"
+        ],
+        "key": "/home/moritz/documents/book_library/Shahid Riaz/the-return-of-the-king (8)/the-return-of-the-king - Shahid Riaz.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Shahid Riaz/the-return-of-the-king (8)/the-return-of-the-king - Shahid Riaz.epub",
+        "timestamp": "2024-12-04T19:14:16.688Z",
+        "title": "the-return-of-the-king"
+      },
+      {
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "key": "/home/moritz/documents/book_library/J. K. Rowling/Harry Potter and the Deathly Hallows (19)/Harry Potter and the Deathly Hallows - J. K. Rowling.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/J. K. Rowling/Harry Potter and the Deathly Hallows (19)/Harry Potter and the Deathly Hallows - J. K. Rowling.epub",
+        "timestamp": "2024-12-04T18:51:06.066Z",
+        "title": "Harry Potter and the Deathly Hallows"
+      },
+      {
+        "authors": [
+          "J.K.Rowling"
+        ],
+        "key": "/home/moritz/documents/book_library/J.K.Rowling/Harry Potter 1 - Harry Potter and the Sorcerer's Stone (14)/Harry Potter 1 - Harry Potter and the Sorc - J.K.Rowling.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/J.K.Rowling/Harry Potter 1 - Harry Potter and the Sorcerer's Stone (14)/Harry Potter 1 - Harry Potter and the Sorc - J.K.Rowling.epub",
+        "timestamp": "2024-12-04T18:19:52.375Z",
+        "title": "Harry Potter 1 - Harry Potter and the Sorcerer's Stone"
+      },
+      {
+        "authors": [
+          "J. K. Rowling"
+        ],
+        "key": "/home/moritz/documents/book_library/Unknown/Harry-Potter-and-the-Deathly-Hallows (18)/Harry-Potter-and-the-Deathly-Hallows - Unknown.epub",
+        "pathtoebook": "/home/moritz/documents/book_library/Unknown/Harry-Potter-and-the-Deathly-Hallows (18)/Harry-Potter-and-the-Deathly-Hallows - Unknown.epub",
+        "timestamp": "2024-12-04T18:11:38.910Z",
+        "title": "Harry Potter and the Deathly Hallows"
+      }
+    ]
+  }
+}

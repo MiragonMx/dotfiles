@@ -1,8 +1,21 @@
 {
+  "add a plugin dialog": "/home/moritz-fw13/downloads",
+  "add books dialog dir": "/home/moritz-fw13/cloud/documents",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "choose-export-folder-for-import": "/run/media/moritz-fw13/SSD_Extern/books_cali",
+  "select-folder-for-imported-library": "/home/moritz-fw13/documents/books_cali",
   "sort_history": [
     [
-      "timestamp",
+      "ondevice",
+      true
+    ],
+    [
+      "series",
       false
+    ],
+    [
+      "title",
+      true
     ],
     [
       "timestamp",

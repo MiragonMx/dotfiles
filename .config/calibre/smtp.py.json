@@ -1,0 +1,18 @@
+{
+  "accounts": {
+    "moritzboueke@pbsync.com": [
+      "MOBI, EPUB",
+      true,
+      true
+    ]
+  },
+  "aliases": {},
+  "encryption": "SSL",
+  "from_": "moritz@bouekehome.de",
+  "relay_host": "smtp.ionos.de",
+  "relay_password": "684a5273393b676f6d7e752e514155646e6658414a655763713352502857",
+  "relay_port": 465,
+  "relay_username": "moritz@bouekehome.de",
+  "subjects": {},
+  "tags": {}
+}
