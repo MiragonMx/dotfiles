@@ -11,9 +11,9 @@ set mbox_type = Maildir
 set hostname = "bouekehome.de"
 source /usr/local/share/mutt-wizard/switch.muttrc
 set spool_file = "+INBOX"
-set postponed = "+Entw&APw-rfe"
-set trash = "+Papierkorb"
-set record = "+Gesendete Nachrichten"
+set postponed = "+Drafts"
+set trash = "+Trash"
+set record = "+Sent"
 
 macro index o "<shell-escape>mailsync moritz@bouekehome.de<enter>" "sync moritz@bouekehome.de"
 mailboxes "=INBOX" "=Entw&APw-rfe" "=Gesendete Objekte" "=Spam" "=Papierkorb" "=Archiv" "=Archiv/HASPA" "=Archiv/PayPal" "=Archiv/WG Kiel"

@@ -20,7 +20,16 @@ Channel moritz@bouekehome.de
 Expunge Both
 Far :moritz@bouekehome.de-remote:
 Near :moritz@bouekehome.de-local:
-Patterns * !"[Gmail]/All Mail" !"*fts-flatcurve*" !"*virtual*"
+Patterns * !"Entwürfe" !"Entw&APw-rfe"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+
+Channel moritz@bouekehome.de-drafts
+Expunge Both
+Far :moritz@bouekehome.de-remote:"Entwürfe"
+Near :moritz@bouekehome.de-local:"Entw&APw-rfe"
 Create Both
 SyncState *
 MaxMessages 0

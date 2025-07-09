@@ -1,0 +1,23 @@
+account moritz@bouekehome.de
+host smtp.ionos.de
+port 587
+from moritz@bouekehome.de
+user moritz@bouekehome.de
+passwordeval "pass moritz@bouekehome.de"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/moritz-fw13/.local/state/msmtp/msmtp.log
+# tls_starttls
+
+account mobo@tf.uni-kiel.de
+host mailhost.tf.uni-kiel.de
+port 587
+from mobo@tf.uni-kiel.de
+user mobo
+passwordeval "pass mobo@tf.uni-kiel.de"
+auth on
+tls on
+tls_starttls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/moritz-fw13/.local/state/msmtp/msmtp.log
