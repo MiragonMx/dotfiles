@@ -6,3 +6,8 @@ linemode = "none"
 [preview]
 max_width = 900
 max_height = 900
+
+[opener]
+open = [
+	{ run = 'xdg-open "$@"', desc = "Open" },
+]
