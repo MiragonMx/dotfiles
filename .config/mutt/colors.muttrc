@@ -1,4 +1,18 @@
 # vim: filetype=muttrc
 
-source ./colors-gruvbox-shuber.muttrc
-source ./colors-gruvbox-shuber-extended.muttrc
+# source ./colors-gruvbox-shuber.muttrc
+# source ./colors-gruvbox-shuber-extended.muttrc
+
+color sidebar_highlight green default
+color sidebar_indicator cyan default
+color sidebar_divider default default
+color sidebar_flagged default default
+color sidebar_new yellow default
+color indicator green default
+
+color index brightyellow black "~N"
+color index_author brightred black "~N"
+color index_subject brightcyan black "~N"
+
+color status brightyellow default
+

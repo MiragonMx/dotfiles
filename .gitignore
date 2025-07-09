@@ -1,2 +1,3 @@
 .config/ncspot/userstate.cbor
 .config/mutt/.mailsynclastrun
+.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
