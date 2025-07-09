@@ -1,0 +1,17 @@
+set statusbar-bg '#282828'
+set statusbar-fg '#458588'
+
+set inputbar-bg '#282828'
+set inputbar-fg '#d79921'
+
+set recolor-darkcolor '#ebdbb2'
+set recolor-lightcolor '#282828'
+
+set font 'UbuntuMono Nerd Font Mono 12'
+set statusbar-home-tilde true
+
+set first-page-column '1:1'
+
+set selection-clipboard clipboard
+
+set scroll-step 100
