@@ -15,8 +15,10 @@ set postponed = "+Drafts"
 set trash = "+Trash"
 set record = "+Sent"
 
+set signature="~/dotfiles/.config/mutt/accounts/signature.work"
+
 macro index o "<shell-escape>mailsync mobo@tf.uni-kiel.de<enter>" "sync mobo@tf.uni-kiel.de"
-mailboxes "=INBOX" "=Drafts" "=Sent" "=Junk" "=Trash" "=Archive" "=IRTG open" "=orga_rtl" "=scheduled"
+mailboxes "=INBOX" "=Drafts" "=Sent" "=Junk" "=Trash" "=Archives" "=IRTG open" "=orga_rtl" "=scheduled"
 
 macro index,pager gd "<change-folder>=Drafts<enter>" "go to drafts"
 macro index,pager Md ";<save-message>=Drafts<enter>" "move mail to drafts"
@@ -30,7 +32,7 @@ macro index,pager Ct ";<copy-message>=Trash<enter>" "copy mail to trash"
 macro index,pager gs "<change-folder>=Sent<enter>" "go to sent"
 macro index,pager Ms ";<save-message>=Sent<enter>" "move mail to sent"
 macro index,pager Cs ";<copy-message>=Sent<enter>" "copy mail to sent"
-macro index,pager ga "<change-folder>=Archive<enter>" "go to archive"
-macro index,pager Ma ";<save-message>=Archive<enter>" "move mail to archive"
-macro index,pager Ca ";<copy-message>=Archive<enter>" "copy mail to archive"
+macro index,pager ga "<change-folder>=Archives<enter>" "go to archive"
+macro index,pager Ma ";<save-message>=Archives<enter>" "move mail to archive"
+macro index,pager Ca ";<copy-message>=Archives<enter>" "copy mail to archive"
 

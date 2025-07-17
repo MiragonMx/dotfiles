@@ -8,6 +8,8 @@ if status is-interactive
     alias q='exit'
     alias c='clear'
 
+    alias lf='yazi'
+
     alias nv='nvim'
     alias nv.='nvim .'
 
