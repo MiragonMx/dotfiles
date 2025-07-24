@@ -1,0 +1,76 @@
+{
+	"$schema": "https://joplinapp.org/schema/settings.json",
+	"altInstanceId": "",
+	"sync.target": 6,
+	"sync.5.path": "https://cloud.rz.uni-kiel.de/remote.php/webdav/Notes",
+	"sync.5.username": "stu208711",
+	"sync.6.path": "https://cloud.rz.uni-kiel.de/remote.php/webdav/Notes",
+	"sync.6.username": "sutei079",
+	"locale": "en_US",
+	"dateFormat": "DD.MM.YYYY",
+	"ocr.enabled": false,
+	"theme": 2,
+	"themeAutoDetect": false,
+	"markdown.plugin.softbreaks": false,
+	"markdown.plugin.typographer": false,
+	"showTrayIcon": true,
+	"ui.layout": {
+		"key": "root",
+		"children": [
+			{
+				"key": "sideBar",
+				"visible": true,
+				"width": 234
+			},
+			{
+				"key": "noteList",
+				"visible": true,
+				"width": 286
+			},
+			{
+				"key": "tempContainer-hpYGyltXHAthDwIjEbo2pK",
+				"children": [
+					{
+						"key": "plugin-view-joplin.plugin.note.tabs-note.tabs.panel",
+						"context": {
+							"pluginId": "joplin.plugin.note.tabs"
+						},
+						"visible": true,
+						"height": 40
+					},
+					{
+						"key": "editor",
+						"visible": true
+					}
+				],
+				"visible": true
+			},
+			{
+				"key": "plugin-view-io.treymo.LinkGraph-note-graph-view",
+				"context": {
+					"pluginId": "io.treymo.LinkGraph"
+				},
+				"visible": false
+			},
+			{
+				"key": "plugin-view-ylc395.noteLinkSystem-panel",
+				"context": {
+					"pluginId": "ylc395.noteLinkSystem"
+				},
+				"visible": false
+			}
+		],
+		"visible": true
+	},
+	"clipperServer.autoStart": true,
+	"noteVisiblePanes": [
+		"editor",
+		"viewer"
+	],
+	"editor.keyboardMode": "vim",
+	"api.token": "40726dcc65f87e9b935ec42d4e3cad7358cf51a9071a6e4a952f2594d5977d295a58af30c974bb540af99731b5bdc1f2e075553449575ab257a73d0058dbdf79",
+	"spellChecker.languages": [
+		"en-GB"
+	],
+	"windowContentZoomFactor": 200
+}
