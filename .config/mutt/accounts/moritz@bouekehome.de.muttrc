@@ -34,5 +34,6 @@ macro index,pager Ms ";<save-message>=Gesendete Objekte<enter>" "move mail to se
 macro index,pager Cs ";<copy-message>=Gesendete Objekte<enter>" "copy mail to sent"
 macro index,pager ga "<change-folder>=Archiv<enter>" "go to archive"
 macro index,pager Ma ";<save-message>=Archiv<enter>" "move mail to archive"
+macro index,pager Mp ";<save-message>=Archiv/PayPal<enter>" "move mail to paypal folder in archive"
 macro index,pager Ca ";<copy-message>=Archiv<enter>" "copy mail to archive"
 
