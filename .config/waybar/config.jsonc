@@ -18,13 +18,13 @@
         "hyprland/workspaces"
     ],
     "modules-right": [
-        "tray",
-        "pulseaudio",
         "backlight",
-        "battery",
+        "pulseaudio",
         "power-profiles-daemon",
+        "battery",
+        "clock",
         "keyboard-state",
-        "clock"
+        "tray"
     ],
 
     "custom/logo": {
@@ -34,6 +34,8 @@
     },
     "hyprland/workspaces": {
         "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
         "format": "{icon}",
         "all-outputs": false,
         "format-icons": {
@@ -44,7 +46,7 @@
             "5": "",
             "6": "󰻞",
             "7": "",
-            "8": "8",
+            "8": "",
             "9": "9",
             "default": "+"
         }
@@ -65,27 +67,30 @@
         "interval": 5,
         "format": "󰍛 {}%",
         "max-length": 10,
-        "on-click-right": "kitty sh -c 'btop'"
+        "on-click-right": "wezterm start btop"
     },
     "disk": {
 	    "interval": 30,
 	    "format": " {percentage_used}%",
 	    "tooltip-format": " {specific_used:0.1f}/{specific_total:0.1f}GB use used",
 	    "unit": "GB",
-        "on-click-right": "kitty sh -c 'btop'"
+        // "on-click-right": "kitty sh -c 'btop'"
+        "on-click-right": "wezterm start btop"
     },
     "cpu": {
         "interval": 5,
         "format": " {icon}",
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],
-        "on-click-right": "kitty sh -c 'btop'"
+        // "on-click-right": "kitty sh -c 'btop'"
+        "on-click-right": "wezterm start btop"
     },
     "temperature": {
         "critical-threshold": 80,
         "format-critical": "{temperatureC}°C ",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", "", "", ""],
-        "on-click-right": "kitty sh -c 'btop'"
+        // "on-click-right": "kitty sh -c 'btop'"
+        "on-click-right": "wezterm start btop"
     },
 
     "pulseaudio": {
