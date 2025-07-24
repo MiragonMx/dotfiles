@@ -43,4 +43,6 @@ if status is-interactive
 end
 
 export EDITOR='nvim'
+
+# fish_add_path ~/.local/share/nvim/mason/bin/
 thefuck --alias | source
