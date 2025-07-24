@@ -15,3 +15,9 @@ set first-page-column '1:1'
 set selection-clipboard clipboard
 
 set scroll-step 100
+
+# LaTeX sync capability
+set synctex true
+# nvim-texlabconfig or smth necessary
+set synctex-editor-command "texlab inverse-search -i %{input} -l %{line}"
+# set synctex-editor-command ' nvim --headless -c "lua TexlabInverseSearch(\"%{input}\", %{line})" '
