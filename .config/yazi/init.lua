@@ -11,3 +11,6 @@ function Linemode:perm_sz_mtime()
 	local perm = self._file:permissions()
 	return string.format("%s %s %s", size and ya.readable_size(size) or "-", time, perm)
 end
+
+-- Activate plugins
+require("full-border"):setup()
