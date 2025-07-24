@@ -10,7 +10,14 @@ return {
             -- Set up lspconfig.
             require("mason").setup()
             require("mason-lspconfig").setup({
-                ensure_installed = { "marksman", "clangd", "matlab_ls", "texlab", "pyright" },
+                ensure_installed = { "marksman", "clangd", "matlab_ls", "lua_ls", "texlab", "pyright" },
+                automatic_enable = {
+                    exclude = {
+                        "clangd",
+                        "texlab",
+                        "lua_ls"
+                    }
+                }
             })
 
             --vim.api.nvim_command("MasonToolsInstall")
@@ -18,16 +25,16 @@ return {
             local lspconfig = require("lspconfig")
             local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-            lspconfig.marksman.setup {
-                capabilities = capabilities
-            }
+            -- lspconfig.marksman.setup {
+            --     capabilities = capabilities
+            -- }
             lspconfig.clangd.setup {
                 capabilities = capabilities,
                 cmd = { "clangd", "--background-index" }
             }
-            lspconfig.matlab_ls.setup {
-                capabilities = capabilities
-            }
+            -- lspconfig.matlab_ls.setup {
+            --     capabilities = capabilities
+            -- }
             lspconfig.lua_ls.setup {
                 settings = {
                     Lua = {
@@ -60,6 +67,7 @@ return {
                         diagnosticsDelay = 50,
                         build = {
                             executable = "latexmk",
+                            onSave = true,
                             args = {
                                 "-pdf",
                                 "-interaction=nonstopmode",
@@ -68,9 +76,13 @@ return {
                                 "%f",
                             },
                         },
+                        forwardSearch = {
+                            executable = "zathura",
+                            args = { "--synctex-forward", "%l:1:%f", "%p" },
+                        },
                     },
                 },
-                capabilities = capabilities
+                -- capabilities = capabilities
             }
             vim.diagnostic.config({ virtual_lines = true })
             vim.diagnostic.config({ virtual_text = false })
