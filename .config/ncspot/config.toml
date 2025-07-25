@@ -3,6 +3,7 @@ volnorm = true
 notify = true
 bitrate = 320
 flip_status_indicators = true
+initial_screen = "queue"
 
 [keybindings]
 # "q" = "back"
