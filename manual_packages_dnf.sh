@@ -12,6 +12,7 @@ sudo dnf install blueman
 sudo dnf install bluez
 sudo dnf install btop
 sudo dnf install calibre
+sudo dnf install cava
 sudo dnf install clipman
 sudo dnf install cmatrix
 sudo dnf install cmake
