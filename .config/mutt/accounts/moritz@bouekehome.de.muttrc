@@ -11,9 +11,9 @@ set mbox_type = Maildir
 set hostname = "bouekehome.de"
 source /usr/local/share/mutt-wizard/switch.muttrc
 set spool_file = "+INBOX"
-set postponed = "+Drafts"
-set trash = "+Trash"
-set record = "+Sent"
+set postponed = "+Entw&APw-rfe"
+set trash = "+Papierkorb"
+set record = "+Gesendete Objekte"
 
 unset signature
 
